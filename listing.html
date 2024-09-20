@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bloobook</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Meta descriptions may be included in search results to concisely summarize page content.">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper property-listing-page">
+
+		<!-- Start Header -->
+		<header class="header">
+			<div class="show-menu-toggle-block"></div>
+			<a href="index.html" title="Logo" aria-label="Logo" class="logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="right-header">
+				<select class="flags-dropdown  sm-flag-dropdown">
+					<option selected value="uk" class="flag" >UK</option>
+					<option value="usa" class="flag" >USA</option>
+					<option value="South Africa" class="flag" >South Africa</option>
+				</select>
+				<div class="hamburger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+
+				<ul class="nav-menu">
+					<li>
+						<a href="index.html" title="Home">Home</a>
+					</li>
+					<li class="has-sub-menu">
+						<a href="#" title="Properties" class="active">Properties</a>
+						<ul class="nav-sub-menu">
+							<li>
+								<a href="listing.html" title="House for rent" class="sub-link">House for rent </a>
+							</li>
+							<li>
+								<a href="listing.html" title="Apartment for rent" class="sub-link">Apartment for rent</a>
+							</li>
+							<li>
+								<a href="listing.html" title="Condo for rent" class="sub-link">Condo for rent</a>
+							</li>
+							<li>
+								<a href="listing.html" title="Townhouse for rent" class="sub-link">Townhouse for rent</a>
+							</li>
+							<li>
+								<a href="listing.html" title="Bungalow for rent" class="sub-link">Bungalow for rent</a>
+							</li>
+							<li>
+								<a href="listing.html" title="Cottage for rent" class="sub-link">Cottage for rent</a>
+							</li>
+							<li>
+								<a href="listing.html" title="Rooms for rent" class="sub-link">Rooms for rent</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="about.html" title="About us">About us</a>
+					</li>
+					<li>
+						<a href="contact.html" title="Contact us">Contact us</a>
+					</li>
+					<li class="flags-dropdown-wrapper">
+						<select class="flags-dropdown">
+							<option selected value="uk" class="flag" >UK</option>
+							<option value="usa" class="flag" >USA</option>
+							<option value="South Africa" class="flag" >South Africa</option>
+						</select>
+					</li>
+					<li class="login-register">
+						<a href="#" title="Login / Register" data-toggle="modal" data-target="#loginModal">
+							<em><img src="images/user-white.svg" alt=""></em>
+							<em class="sm-icon"><img src="images/user.svg" alt=""></em>
+							<span class="sm-hide">Login / Register</span>
+						</a>
+					</li>
+				</ul>
+			</div>			
+		</header>
+		<!-- End Header -->	
+
+		<!-- Main Content -->
+		<main class="main-content">
+			<div class="filter-input-block">
+				<div class="sm-filter-input-close">
+					<button class="btn"><img src="images/close.svg" alt=""></button>
+				</div>
+				<div class="form-group">
+					<div class="input-with-icon">
+						<button class="btn icon-prepend">
+							<img src="images/search.png" alt="" />
+						</button>
+						<input type="text" class="form-control control-prepend" placeholder="Search">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="filter-popup-wrapper">
+						<div class="input-group currency">
+							<div class="input-group-prepend">
+								<select class="custom-select form-control ">
+									<option>USD</option>
+									<option>INR</option>
+								</select>
+							</div>
+							<div class="filter-popup-input has-filtered">Price</div>
+						</div>
+						
+						<div class="filter-popup-dropdown custom-scroll">
+							<div class="input-min-max">
+								<input type="text" class="form-control" placeholder="Min" />
+								<input type="text" class="form-control" placeholder="Max" />
+							</div>
+							<ul class="price-list">
+								<li>$0+</li>
+								<li>$200+</li>
+								<li>$400+</li>
+								<li>$600+</li>
+								<li>$800+</li>
+								<li>$1000+</li>
+								<li>$1200+</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="filter-popup-wrapper">
+						<div class="filter-popup-input">Beds</div>
+						<div class="lg filter-popup-dropdown custom-scroll">
+
+							<label class="label">Bedrooms</label>
+							<ul class="filter-radio-list">
+								<li>
+									<input type="radio" class="filter-radio" name="filter-radio-list" checked>
+									<button class="btn">
+										Any
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="filter-radio-list">
+									<button class="btn">
+										1
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="filter-radio-list">
+									<button class="btn">
+										2
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="filter-radio-list">
+									<button class="btn">
+										3
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="filter-radio-list">
+									<button class="btn">
+										4+
+									</button>
+								</li>
+							</ul>
+
+							<label class="my label">Bathrooms</label>
+							<ul class="filter-radio-list">
+								<li>
+									<input type="radio" class="filter-radio" name="bathrooms-radio" checked>
+									<button class="btn">
+										Any
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="bathrooms-radio">
+									<button class="btn">
+										1
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="bathrooms-radio">
+									<button class="btn">
+										2
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="bathrooms-radio">
+									<button class="btn">
+										3
+									</button>
+								</li>
+								<li>
+									
+									<input type="radio" class="filter-radio" name="bathrooms-radio">
+									<button class="btn">
+										4+
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="filter-popup-wrapper">
+						<div class="filter-popup-input">Type</div>
+						<div class="p-lg filter-popup-dropdown custom-scroll">
+							<ul class="multiple-checkbox-list">
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="all">
+										<label class="custom-control-label" for="all">All</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Home">
+										<label class="custom-control-label" for="Home">Home</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Apartment">
+										<label class="custom-control-label" for="Apartment">Apartment</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Condo">
+										<label class="custom-control-label" for="Condo">Condo</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Townhouse">
+										<label class="custom-control-label" for="Townhouse">Townhouse</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Bungalow">
+										<label class="custom-control-label" for="Bungalow">Bungalow</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Cottage">
+										<label class="custom-control-label" for="Cottage">Cottage</label>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="Rooms">
+										<label class="custom-control-label" for="Rooms">Rooms</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group last-child">
+					<input type="text" class="form-control datepicker" placeholder="Move to date">
+				</div>
+
+				<div class="filter-popup-wrapper d-inline-block">
+					<button class="btn btn-dropdown btn-primary ">
+						More
+						<em class="drop-icon"></em>
+					</button>
+					<div class="filter-price-popup filter-popup-dropdown">
+						<div class="input-min-max">
+							<input type="text" class="form-control" placeholder="Min" />
+							<input type="text" class="form-control" placeholder="Max" />
+						</div>
+						<ul class="price-list">
+							<li>$0+</li>
+							<li>$200+</li>
+							<li>$400+</li>
+							<li>$600+</li>
+							<li>$800+</li>
+							<li>$1000+</li>
+							<li>$1200+</li>
+						</ul>
+					</div>
+				</div>
+				<button class="btn btn-secondary clear-filter">
+					Clear Filter
+				</button>
+			</div>
+			<div class="container-fluid">
+				<div class="property-main-block">
+					<div class="sm-listing-title-block">
+						<div class="listing-title">
+							<h4>Bungalow</h4>
+							<p>751 results</p>
+						</div>
+						<div class="sm-map-and-short-btns">
+							<button class="btn show-map-btn">
+								<em class="active"><img src="images/align-left.svg" alt=""><img src="images/align-left-blue.svg" class="overlap" alt=""></em>
+								<em class=""><img src="images/map-pin-white.svg" alt=""><img src="images/map-pin-blue.svg" class="overlap" alt=""></em>
+							</button>
+							<button class="btn btn-primary show-filter-btn btn-icon">
+								<em><img src="images/filter.svg" alt=""></em>
+								Filter
+							</button>
+						</div>
+					</div>
+					<div class="property-map-block">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9933.691726786126!2d-0.0753565!3d51.5054564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e78421a085a6f2d!2sTower%20Bridge!5e0!3m2!1sen!2sin!4v1612849630532!5m2!1sen!2sin"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<div class="property-detail-listing-block">
+						<div class="listing-title">
+							<h4>Bungalow</h4>
+							<p>751 results</p>
+						</div>
+						<ul class="property-listing-wrapper">
+							<li class="prop01">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+							<li class="prop02">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+							<li class="prop03">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+							<li class="prop04">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+							<li class="prop05">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+							<li class="prop06">
+								<a href="details.html" class="property-listing-block">
+									<div class="swiper-container property-listing-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img.jpg);">
+											</div>
+											<div class="swiper-slide" style="background-image: url(images/property-listing-img2.jpg);">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+
+										<span class="badge">04 Photos</span>
+									</div>
+									<div class="property-listing-details">
+										<span class="text-primary">Bungalow</span>
+										<h5>North Dillard Street</h5>
+										<p class="p-location">Chicago, IL, 60642 USA</p>
+										<ul class="value-list">
+											<li>Bedroom : 4</li>
+											<li>Baths : 2</li>
+											<li>Sqft : 420</li>
+										</ul>
+										<span class="h4 property-price">$685 <small>/ Mon</small></span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<footer class="footer property-listing-footer">		
+							<div class="container">
+								<div class="top-footer">
+									<div class="porperty-link-block">
+										<h6>Properties</h6>
+										<ul class="footer-link-list">
+											<li><a href="#" title="House for rent">House for rent</a></li>
+											<li><a href="#" title="Apartment for rent">Apartment for rent</a></li>
+											<li><a href="#" title="Condo for rent">Condo for rent</a></li>
+											<li><a href="#" title="Townhouse for rent">Townhouse for rent</a></li>
+											<li><a href="#" title="Bungalow for rent">Bungalow for rent</a></li>
+											<li><a href="#" title="Cottage for rent">Cottage for rent</a></li>
+											<li><a href="#" title="Rooms for rent ">Rooms for rent </a></li>
+										</ul>
+									</div>
+									<div class="quick-link-block">
+										<h6>Quick Links</h6>
+										<ul class="footer-link-list">
+											<li><a href="#" title="About Us">About Us</a></li>
+											<li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+											<li><a href="#" title="Support Center">Support Center</a></li>
+											<li><a href="#" title="Press Info">Press Info</a></li>
+										</ul>
+									</div>
+									<div class="contact-block">
+										<h6>Contact Us</h6>
+										<ul class="footer-link-list">
+											<li>
+												<a href="mailto:info@Bloobook.com" title="info@Bloobook.com">info@Bloobook.com</a>
+											</li>
+											<li>Collins Street West, Victoria 8007, Australia.</li>
+											<li>
+												<a href="tel:+1-246-345-0695" title="+1 246-345-0695">+1 246-345-0695</a>
+											</li>
+										</ul>
+									</div>
+									<div class="followus-block">
+										<h6>Follow us</h6>
+										<ul class="media-link">
+											<li>
+												<a href="#" title="Facebook"><img src="images/facebook-icon.svg" alt=""></a>
+											</li>
+											<li>
+												<a href="#" title="Facebook"><img src="images/google-icon.svg" alt=""></a>
+											</li>
+											<li>
+												<a href="#" title="Facebook"><img src="images/instagram-icon.svg" alt=""></a>
+											</li>
+											<li>
+												<a href="#" title="Facebook"><img src="images/twitter-icon.svg" alt=""></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p class="copyright">Copyright &copy; 2021 Bloobook. All rights reserved</p>		
+						</footer>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- End Main Content -->
+	</div>
+
+	<!-- Login Modal -->
+	<div class="modal fade login-modal" id="loginModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="btn close-btn" data-dismiss="modal"></button>
+					<h4>Sign into your account</h4>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter Your Email">
+					</div>
+					<div class="form-group mb-lg">
+						<input type="password" class="form-control" placeholder="Enter Your Password">
+					</div>
+					<button class="btn btn-primary btn-block">Login</button>
+					<div class="forgot-block">
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="RememberMe">
+							<label class="custom-control-label" for="RememberMe">Remember Me</label>
+						</div>
+						<a href="#" title="Forgot Password">Forgot Password?</a>
+					</div>
+					<div class="signup-block">
+						Don’t have an account? <a href="#" title="Sign Up" data-toggle="modal" data-target="#signupModal"  data-dismiss="modal">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Register Modal -->
+	<div class="modal fade signup-modal" id="signupModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="btn close-btn" data-dismiss="modal"></button>
+					<h4>Create an account</h4>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<select class="custom-select form-control">
+									<option>Mr.</option>
+									<option>Miss.</option>
+									<option>Mrs.</option>
+								</select>
+							</div>
+							<input type="text" class="form-control" placeholder="First Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Last Name">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Phone (cell)">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Confirm Email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+					
+					<div class="condition-block">
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="TermsConditions">
+							<label class="custom-control-label" for="TermsConditions">I Accept Terms and Conditions </label>
+						</div>
+						<a href="#" title="Read more"> &nbsp; Read more</a>
+					</div>
+					<button class="btn btn-primary sign-in-btn">Sign in</button>
+					<div class="signup-block">
+						<a href="#" title="Sign in" data-toggle="modal" data-target="#loginModal"  data-dismiss="modal">sign into your account</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScripts -->
+	<script data-main="js/main" src="js/main.js"></script>
+	<!-- <script>
+		$(function(){
+			var propListingScrollTop = $('.property-detail-listing-block').scrollTop();
+			var propTopPos = $('.property-detail-listing-block .prop05').position().top;
+			var finalPos = (propListingScrollTop + propTopPos) - $(".property-detail-listing-block .property-listing-wrapper > li").innerHeight();
+
+			$('.property-detail-listing-block').animate({ scrollTop: finalPos }, 1000);
+		})
+	</script> -->
+</body>
+</html>

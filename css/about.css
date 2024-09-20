@@ -1,0 +1,24 @@
+.about-page p{
+	color: #787878;
+}
+.about-page h4{
+	font-size: 22px; line-height: 26px; padding: 5px 0 16px;
+}
+.about-inner-section{
+	padding: 58px 0;
+}
+
+.about-inner-section p{
+	line-height: 22px;
+}
+
+@media (max-width: 767px){
+	.about-page h4 {
+		font-size: 20px;
+		line-height: 24px;
+		padding: 0px 0 16px;
+	}
+	.about-inner-section {
+		padding: 30px 0;
+	}
+}

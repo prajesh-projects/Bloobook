@@ -1,0 +1,134 @@
+.login-modal .modal-dialog,.signup-modal .modal-dialog { max-width: 534px; }
+.login-modal .close-btn,
+.signup-modal .close-btn{
+	top: 12px;
+	right: 11px;
+}
+.login-modal .modal-body{
+	text-align: center;
+	padding: 75px 80px 45px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.signup-modal .modal-body{
+	text-align: center;
+	padding: 60px 50px 45px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.login-modal .form-control,
+.signup-modal .form-control{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.login-modal .mb-lg{
+	margin-bottom: 24px;
+}
+.login-modal h4,
+.signup-modal h4{
+	font-size: 28px;
+	line-height: 32px;
+	padding-bottom: 39px;
+}
+.signup-modal h4 {
+	padding-bottom: 28px;
+}
+.login-modal .forgot-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 23px 0 33px;
+	color: #666666;
+}
+.login-modal .forgot-block a{
+	font-style: italic;
+	font-weight: 400;
+}
+
+.login-modal a,
+.signup-modal a{
+	color: #242423;
+	font-weight: 600;
+}
+.login-modal a:hover,
+.signup-modal a:hover{
+	color: #019de2;
+}
+
+.login-modal .signup-block,
+.signup-modal .signup-block{
+	color: #7f7f7f;
+	border-top: 1px solid #dedede;
+	padding-top: 38px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.signup-modal .signup-block{
+	padding-top: 22px;
+}
+
+.signup-modal .custom-select{
+	width: 81px;
+	background-position: center right 7px;
+}
+.signup-modal .condition-block{
+	text-align: left;
+	margin-bottom: 26px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.signup-modal .condition-block a{
+	color: #019de2;
+	font-weight: 400;
+}
+.signup-modal .condition-block a:hover{
+	color: #242423;
+}
+.signup-modal .sign-in-btn{
+	width: 87%;	
+	margin-bottom: 27px;
+}
+.signup-modal .custom-control.custom-checkbox {
+	padding-left: 31px;
+}
+.signup-modal .custom-control-label::before {
+	left: -31px;
+}
+.signup-modal .custom-checkbox .custom-control-label::after {
+	left: -26px;
+}
+
+@media (max-width: 767px){
+	.login-modal h4,
+	.signup-modal h4 {
+		font-size: 20px;
+		line-height: 24px;
+		padding-bottom: 22px;
+	}
+	.login-modal .modal-body {
+		padding: 58px 18px 26px;
+	}
+	.login-modal .forgot-block {
+		margin: 23px 0;
+	}
+	.login-modal .signup-block {
+		padding-top: 16px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.signup-modal .modal-body {
+		padding: 58px 15px 30px;
+	}
+}
+@media (max-width: 375px){
+	.signup-modal .condition-block {
+		display: block;
+	}
+	.signup-modal .condition-block a {
+		margin-left: 24px;
+	}
+}
+

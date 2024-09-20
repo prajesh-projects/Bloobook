@@ -1,0 +1,154 @@
+
+.contact-page .hero-secondary-block h1 {
+	padding: 86px 0 168px;
+}
+
+.contact-inner-section{
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0px 6px 22.08px 1.92px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	overflow: hidden;
+
+	position: relative;
+	margin-top: -97px;
+	z-index: 1;
+	margin-bottom: 150px;
+}
+.contact-inner-section h4{
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 600;
+	margin-bottom: 35px;
+	padding: 0;
+}
+
+
+.contact-inner-section .send-msg-block{
+	padding: 44px 30px;
+	background-color: #fff;
+	width: 63%;
+}
+.contact-inner-section .send-msg-block h4{
+	color: #121027
+}
+.contact-inner-section .send-msg-block .mb-last{
+	margin-bottom: 33px;
+}
+.contact-inner-section .send-msg-block .btn{
+	padding: 9px 17px;
+}	
+
+
+.contact-inner-section .getin-touch-block{
+	background-color: #019de2;
+	padding: 44px 58px;
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+	width: 37%;
+}
+.contact-inner-section .getin-touch-block h4{
+	color: #fff
+}
+.contact-inner-section .getin-touch-block ul{
+	padding-top: 26px;
+}
+.contact-inner-section .getin-touch-block ul li{
+	display: flex;
+	align-items: flex-start;
+}
+.contact-inner-section .getin-touch-block ul address{
+	line-height: 24px;
+}
+.contact-inner-section .getin-touch-block ul li + li{
+	margin-top: 60px;
+}
+.contact-inner-section .getin-touch-block ul em{
+	min-width: 27px;
+	margin-right: 20px;	
+}
+.contact-inner-section .getin-touch-block a{
+	word-break: break-all;
+	color: #fff;
+}
+.contact-inner-section .getin-touch-block a:hover,
+.contact-inner-section .getin-touch-block a:focus{
+	color: #e3e3df;
+}
+
+@media (max-width: 1023px){
+	.contact-inner-section .getin-touch-block ul em {
+		min-width: 27px;
+		margin-right: 12px;
+	}
+	.contact-inner-section .getin-touch-block {
+		padding: 44px 30px;
+		width: 37%;
+	}
+}
+@media (max-width: 991px){
+	
+	.contact-page .hero-secondary-block h1 {
+		padding: 86px 0 120px;
+	}
+
+	.contact-inner-section{
+		margin-top: -70px;
+		margin-bottom: 100px;
+	}
+
+	.contact-inner-section h4 {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 28px;
+	}
+
+	.contact-inner-section .send-msg-block {
+		padding:30px 15px; 
+	}
+	.contact-inner-section .getin-touch-block {
+		padding: 30px 15px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.contact-inner-section .getin-touch-block ul {
+		padding-top: 22px;
+	}
+	.contact-inner-section .getin-touch-block ul li + li {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 767px){
+	
+	.contact-page .hero-secondary-block h1 {
+		padding: 42px 0 82px;
+	}
+
+	.contact-inner-section{
+		margin-top: -55px;
+		margin-bottom: 50px;
+	}
+
+	.contact-inner-section h4 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	.contact-inner-section .send-msg-block {
+		padding:20px 15px; 
+		width: 100%;
+	}
+	.contact-inner-section .getin-touch-block {
+		padding: 20px 15px;
+		width: 100%;
+	}
+	.contact-inner-section .getin-touch-block ul {
+		padding-top: 0px;
+	}
+	.contact-inner-section .getin-touch-block ul li + li {
+		margin-top: 15px;
+	}
+
+}
